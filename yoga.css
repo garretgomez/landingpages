@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    /*background-image: linear-gradient(crimson,tomato,purple,blue,green);*/
+    background: repeating-radial-gradient(purple,tomato, cornsilk, cornsilk);
+    background-size: repeat;
+    background-attachment: fixed;
+}
+a:hover{
+    cursor: pointer;
+}
+h1,h2,h3,h4{
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+}
+nav{
+   z-index:3;
+   text-decoration: none;
+   color: #000;
+   text-align: center;
+}
+nav h2{
+    padding: 5px;
+    font-size: 46px;
+}
+ul li{
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+}
+ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 7px;
+}
+.red{
+   /* background-image: linear-gradient(crimson,tomato);*/
+    color: #fff;
+    padding: 1rem 3rem;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+}
+
+
+.btn{
+    background-color: transparent;
+    border: solid 3px #000;
+    padding: 10px;
+    margin: 15px;
+}
+
+#header{
+    padding: 2rem;
+    position: relative;
+}
+#header::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("yoga2.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+}
+.container{
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+#header .purple-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#header .purple{
+   /* background-image: linear-gradient(tomato, purple);*/
+    padding: 1rem 3rem;
+    /*backdrop-filter: blur(25px);
+   background: rgba(255,255,255,0.1);*/
+    text-align: center;
+    z-index: 1;  
+    margin: auto;
+    line-height: 40px;
+    padding: 0;
+}
+#header .purple h1{
+    font-size: 45px;
+}
+
+
+.wrapper{
+    margin: auto;
+    max-width: 1400px;
+}
+.wrapper h2{
+    text-align: center;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+    font-size: 50px;
+    padding: 5px;
+}
+.blue{
+    /*background-image: linear-gradient( purple, blue);*/
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    /*backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.1);*/
+}
+.blue h2{
+   /* grid-column: 1 / span 3;*/
+    text-align: center;
+    color: #000;
+}
+.card{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 80%;
+    text-align: center;
+    line-height: 17px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+   
+    margin: 0 10px;
+    justify-items: center;
+}
+.card h3{
+    padding: 10px 0;
+}
+.card p{
+    padding-bottom: 10px;
+    margin: 0 20px;
+    display: block;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card div{
+    padding: 1rem;
+    display: block;
+    line-height: 20px;
+}
+.card div h3{
+    font-size: 28px;
+}
+.card div p{
+    padding-bottom: 10px;
+}
+.card .desc{
+    padding: 10px;
+}
+
+.card .desc ul{
+    padding: 10px;
+}
+.card .desc ul li{
+    display: block;
+    padding: 5px;
+}
+
+.green{
+   /* background-image: linear-gradient( blue, green);*/
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.1);
+    max-width: 1400px;
+    margin: auto;
+}
+.green h2{
+    grid-column: 1 / span 3;
+    text-align: center;
+    color: #000;
+    font-size: 45px;
+}
+
+#banner{
+    padding: 2rem;
+    position: relative;
+    
+}
+#banner::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("retreat.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+}
+#banner .purple-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#banner .purple{
+   /* background-image: linear-gradient(tomato, purple);*/
+    padding: 1rem 3rem;
+    /*backdrop-filter: blur(25px);
+   background: rgba(255,255,255,0.1);*/
+    text-align: center;
+    z-index: 1;  
+    margin: auto;
+    line-height: 40px;
+    padding: 0;
+}
+#banner .purple h1{
+    font-size: 45px;
+}
+
+section{
+    padding: 10px;
+}
+
+.subsection{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    gap: 5px;
+}
+section h2{
+    font-size: 45px;
+    padding: 10px;
+}
+section div{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+}
+section div img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+.subsection h4{
+    font-size: 25px;
+}
+section div:hover{
+    backdrop-filter: blur(0px);
+}
+
+.ewrapper{
+    padding: 10px;
+}
+.email{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    max-width: 1400px;
+    margin: auto;
+}
+.email form{
+    padding: 5px;
+    line-height: 50px;
+}
+#submit{
+    background-color: tomato;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    width: 90%;
+}
+#email{
+    width: 90%;
+    padding: 10px;
+}

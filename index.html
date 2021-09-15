@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 5000;
+        var heading= [];
+        var slideIndex = 0;
+
+
+        images[0] = 'img/tracking.PNG';
+        images[1] = 'img/alerts.PNG';
+        images[2] = 'img/history.PNG';
+        images[3] = 'img/resolution.PNG'; 
+
+        var x = 0;
+        function textSlide(){
+            if(x==0){
+                document.slide.src = 'img/tracking.PNG';
+                document.getElementById("slide").innerHTML="Visual Tracking";
+                document.getElementById("desc").innerHTML="Route syncs every order instantly and displays them visually.<br> No digging for tracking numbers.";
+            }
+            if(x==1){
+                document.slide.src = 'img/alerts.PNG';
+                document.getElementById("slide").innerHTML="Real-time alerts";
+                document.getElementById("desc").innerHTML="Wondering where your package is?<br> Proactive notifications keep you in the loop every step of the way.";
+            }
+            if(x==2){
+                document.slide.src = 'img/history.PNG';
+                document.getElementById("slide").innerHTML="Order history";
+                document.getelementById("desc").innerHTML="Keep track of what you bought<br> when you bought it and from who - all without lifting a finger.";
+            }
+            if(x==3){
+                document.slide.src = 'img/resolution.PNG';
+                document.getElementById("slide").innerHTML="Instant resolution";
+                document.getElementById("desc").innerHTML="Something not right?<br> Deal with lost, stolen and damaged packages in a few clicks.";
+            }
+            x++;
+            if(x>=4){
+                x=0;
+            }
+            setTimeout("textSlide()", 6000);
+        }
+        
+    </script>
+    <title>Home| Route</title>
+</head>
+<body onload="textSlide()">
+    <nav>
+        <img src="img/route-logo-white.png" width="15%" height="15%">
+        <div>
+            <div class="subnav">
+                <a>For Consumers</a>
+                <div class="dropdown">
+                    
+                    <button>For Merchants <i class="fa fa-chevron-down"></i></button>
+                    <div class="dcontent">
+                        <button id="merchants">For Merchants <i class="fa fa-chevron-up"></i></button>
+                        <div>
+                            <a href="#"><i class="fas fa-location-arrow"></i>  How It Works</a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fas fa-map-marked-alt"></i>  Track</a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa fa-shield-alt"></i>  Protect</a>
+                        </div>
+                        <a href="#"><i class="fa fa-comment"></i>  Engage</a>
+                    </div>
+                </div>
+            </div>
+            <a class="dbtn" id="topbtn">Download Route</a>
+            
+        </div>
+    </nav>
+
+    <div class="content">
+         <div>
+             <h1 id="contenthead">Track everything you order online.</h1>
+             <a href="#" class="dbtn">Download Route</a>
+        </div>
+        <div>
+            <img src="img/routephone.png" height="100%" width="100%">
+        </div>
+    </div>
+
+    <div class="vendor">
+            <img src="img/withco.PNG">
+            <img src="img/coto.PNG">
+            <img src="img/salt.PNG">
+            <img src="img/solo.PNG">
+            <img src="img/pattern.PNG">
+    </div>
+
+    <div class="content">
+        <div>
+            <h1 id="head">One place for everything you buy.</h1>
+            <div class="subcontent">
+                <ul>
+                    <li>Visual tracking</li>
+                    <li>Real-time alerts</li>
+                    <li>Order history</li>
+                    <li>Instant resolution</li>
+                </ul>
+                <div class="slidetext">
+                    <h3 id="slide"></h3>
+                    <p id="desc"></p>
+                    <button href="#" id="btn2">Get Organized</button>
+                </div>
+                     <!--  <div class="tracking">
+                        <h3>Visual Tracking</h3>
+                        <p>Route syncs every order instantly and displays them visually.<br> No digging for tracking numbers.</p>
+                        <button href="#" id="btn2">Get Organized</button>
+                    </div>
+                   
+                    <div class="tracking">
+                        <h3>Real-time alerts</h3> 
+                        <p>Wondering where your package is?<br> Proactive notifications keep you in the loop every step of the way.</p>
+                        <button href="#" id="btn2">Get Organized</button>
+                    </div>
+                    <div class="tracking">
+                        <h3>Order history</h3>
+                        <p>Keep track of what you bought<br> when you bought it and from who - all without lifting a finger.</p>
+                        <button href="#" id="btn2">Get Organized</button>
+                    </div>
+                    <div class="tracking">
+                        <h3>Instant resolution</h3>
+                        <p>Something not right?<br> Deal with lost, stolen and damaged packages in a few clicks.</p>
+                        <button href="#" id="btn2">Get Organized</button>
+                    </div>-->
+            </div>
+        </div>
+        
+            <img name="slide" height="800px">
+       <!-- <div class="slides">
+            <img src="img/tracking.PNG" height="600px">
+        </div>
+         <div class="slides">
+            <img src="img/alerts.PNG" height="600px">
+        </div>
+        <div class="slides">
+            <img src="img/history.PNG" height="600px">
+        </div>
+        <div class="slides">
+            <img src="img/resolution.PNG" height="600px">
+        </div>-->
+    </div>
+
+    
+
+    <div class="content">
+        <div>
+            <h2>We help merchants too.</h2>
+            <h1 id="head">Grow your business with Route.</h1>
+        </div>
+        <div>
+            <h4>Turn one-time shoppers into loyal customers with Route's package tracking, order protection and cusotmer engagement solutions.</h4>
+            <a href="#" id="btn2">Route For Merchants</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="img/routetab.PNG" width="85%" height="80%">
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="img/routeapp.png" width="150px" heigh="150px">
+        </div>
+        <div>
+            <h1>Start tracking all your important online purchases.</h1>
+        </div>
+        <div class="subcontainer">
+            <div>
+                <p>Track everything you order online, in one place. Please fill out the information and we'll text you a link to download the app.</p>
+            </div>
+            <div class="phnumber">       
+                <input type="text" id="number" name="number" placeholder="Enter your mobile number">
+                <a href="#">Send</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="top">
+            <img src="img/route-logo-white.png" width="82px" height="20px">
+        </div>
+        <div id="top" >
+            <h3>General</h3>
+            <ul>
+                <li><a>Blog</a></li>
+                <li><a>Become a partner</a></li>
+                <li><a>Careers</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>Privacy</a></li>
+            </ul>
+        </div>
+        <div id="top">
+            <h3>Shoppers</h3>
+            <ul>
+                <li><a>Download Route for iOS</a></li>
+                <li><a>Download for Android</a></li>
+                <li><a>File a Claim</a></li>
+                <li><a>Help</a></li>
+                <li><a>Privacy</a></li>
+                <li><a>Insurance Policy</a></li> 
+                <li><a>Community Guidelines</a></li> 
+            </ul>
+        </div>
+        <div id="top">
+            <h3>Merchants</h3>
+            <ul>
+                <li><a>Shopify App</a></li>
+                <li><a>Developer Resources</a></li>
+                <li><a>Insurance license</a></li>
+                <li><a>Terms + Conditions</a></li>
+            </ul>
+        </div>
+        <div id="top">
+            <a href="#" class="dbtn">Download Route</a>
+        </div>
+        <div id="bottom">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div id="bottom" class="terms">
+            <p id="policy">2021 Route - <a>Terms & Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
